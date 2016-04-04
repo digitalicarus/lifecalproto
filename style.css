@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700);
+html *, body * {
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+
+	padding: 0 0 0 100px;
+	min-width: 1100px;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.clearfix {
+	clear: both;
+}
+
+.dob-card {
+	padding: 10px;
+	background: white;
+	box-shadow: 0 2px 8px gray;
+	margin: 10px 0 20px 0;
+	float: left;
+}
+.dob-card aside {
+	font-size: 0.5em;
+	font-weight: 300;
+	margin: 10px 0 0 0;
+}
+form.dob {
+	display: flex;
+	justify-content: space-between;
+}
+form.dob .dob-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+form.dob .dob-box label {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+form.dob .dob-box input {
+	width: 50px;
+	text-align: center;
+}
+
+fieldset.marker-type-select {
+	float: left;
+	clear: left;
+}
+
+ul.legend {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.legend li {
+	line-height: 30px;
+	margin: 0 0 0 30px;
+	cursor: pointer;
+}
+.legend li * {
+	cursor: pointer;
+}
+.legend li:before {
+	display: block;
+	margin-top: 3px;
+	margin-left: -30px;
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 25px;
+}
+.legend li.selected:before {
+	box-shadow: 0 0 5px 2px blue;
+}
+.legend li.green:before {
+	background-color: green;
+}
+.legend li.orange:before {
+	background-color: orange;
+}
+.legend li.red:before {
+	background-color: red;
+}
+
+.calendar {
+	clear: both;
+	position: relative;
+	margin: 30px 0 0 0;
+}
+.calendar aside {
+	position: absolute;
+	font-size: 0.6em;
+	font-weight: 400;
+}
+
+.calendar .row {
+	display: flex;
+	position: relative;
+	margin: 0;
+	height: 20px;
+	line-height: 20px;
+	align-items: center;
+}
+.calendar .row > aside {
+	top: 0;
+	left: -15px;
+}
+
+.calendar .cell {
+	display: flex;
+	padding: 3px;
+}
+
+.calendar .cell.current-week {
+	box-shadow: 0 0 5px 2px blue;
+}
+
+.calendar .cell > aside {
+	top: -15px;
+}
+.calendar .cell button {
+	width: 13px;
+	height: 13px;
+	padding: 0;
+	border: 1px solid #666;
+	border-radius: 2px;
+	border-style: outset;
+}
+.calendar .cell[data-value] button {
+	border: none;
+	border-radius: none;
+}
+.calendar .cell[data-value='1'] button {
+	background: green;
+}
+.calendar .cell[data-value='2'] button {
+	background: orange;
+}
+.calendar .cell[data-value='3'] button {
+	background: red;
+}
+
+
